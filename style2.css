@@ -56,9 +56,64 @@ i{
     cursor: pointer;
 }
 
+
+
+
+/* Home  */
+
+.home{
+    display: grid;
+    grid-template-columns: 20% 75%;
+    margin: 30px 0;
+    justify-content: space-evenly;
+}
+
+.catogaries{
+    background-color: aliceblue;
+    border: 1px solid wheat;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.catogaries h2{
+    background-color: rgba(71, 71,186, 0.804);
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    font-size: 3vmin;
+}
+
+
+.catogaries li{
+    list-style-type: none;
+    padding: 1 0;
+    padding-left: 15px;
+    margin-left: -20px;
+}
+.catogaries li a{
+text-decoration: none;
+color: black;
+}
+
+.background-image{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.438)), url(./images/backgroung1.jpg);
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.background-image h2{
+    z-index: 2;
+    text-align: center;
+    font-size: 28px;
+}
 /* nave responsive */
 /* for smal screen */
-@media(max-width:1000px) {
+@media  (max-width: 768px) and (min-width: 400px)  {
     nav{
         height: 50px;
     }
@@ -74,9 +129,9 @@ i{
         width: 250px;
         height: 25px;
         margin-left: -20px;
+    
     }
 
-   
 
     i{
         margin-left: -20px;
@@ -97,7 +152,7 @@ i{
 
 /* for mobile */
 
-@media(max-width:400px){
+@media  (max-width: 400px) and (min-width: 300px){
     nav{
         height: 35px;
     }
@@ -105,11 +160,12 @@ i{
     #logo{
         width: 60px;
         height: 35px;
+        margin-left: 20px;
 
     }
 
     input{
-        width: 170px;
+        width: 114px;
         height: 20px;
     }
 
@@ -131,5 +187,83 @@ i{
     }
     .cart img{
         padding-left: 5px;
+    }
+}
+
+
+
+
+
+
+@media  (max-width: 300px) and (min-width: 200px){
+    nav{
+        height: 35px;
+    }
+
+    #logo{
+        width: 30px;
+        height: 25px;
+        margin-left: 10px;
+
+    }
+
+    input{
+        width: 90px;
+        height: 10px;
+    }
+
+   
+
+    i{
+        background-color: transparent;
+        color: black;
+        margin-left: 23px;
+        padding-top: 2px;
+      
+
+    }
+
+    .cart{
+        padding: 0px 15px;
+        width: 10px;
+        height: 10px;
+    }
+    .cart img{
+        padding-left: 2px;
+    }
+}
+
+
+
+
+/* home */
+
+@media  (max-width: 400px){
+    .home{
+        margin: 20px 0;
+    }
+
+    .catagories{
+        padding: 5px;
+        height: 70px;
+    }
+
+    .catagories h2{
+        font-size: 20vh;
+        padding: 2px;
+        margin-bottom: 2px;
+    }
+
+    .catagories li{
+        padding: 2px 0;
+        font-size: 1vh;
+    }
+
+    .background-image h2{
+        font-size: 18px;
+    }
+
+    .background-image img{
+        width: 60%;
     }
 }
