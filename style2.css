@@ -120,11 +120,18 @@ color: black;
 /* Smartphones */
 
 #mob-heading{
-    margin-top: 40px;
-    margin-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     padding: 10px 20px;
 }
 
+
+hr{
+    
+    margin-left: 25%;
+    margin-right: 25%;
+    
+}
 .mob{
     display: grid;
     grid-template-columns: 14% 14% 14% 14% 14% 14%;
@@ -317,5 +324,88 @@ color: black;
 
     .background-image img{
         width: 60%;
+    }
+}
+
+
+/* smartphones */
+
+@media  (max-width: 736px) and (min-width: 465px) {
+    #mob-heading{
+        margin-top: 60px;
+        margin-bottom: 5px;
+        padding: 10px 20px;
+    }
+    
+    
+    hr{
+        
+        margin-left: 30%;
+        margin-right: 30%;
+        
+    }
+    .mob{
+        
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-around;
+    }
+    
+    .mob-sec{
+      height: 98%;
+      border: 1px solid #fafafa;
+      margin: 10px 0;
+    }
+    
+    .mob-sec img{
+        height: 90%;
+        width: 90%;
+        border-radius: 5px;
+        margin: 10px;
+        background-color: transparent;
+    }
+    
+    .desc{
+        padding: 3px;
+        font-size: medium;
+    }
+    
+    .p1{
+        font-weight: bold;
+    }
+    
+}
+
+/* (smart phones) for mobiles */
+
+@media  (max-width: 463px) and (min-width: 300px) {
+    #mob-heading{
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .mob{
+        grid-template-columns: 50% 50%;
+        justify-content: space-around;
+    }
+    .mob-sec img{
+        height: 90%;
+        width: 90%;
+        border-radius: 5px;
+        margin: 10px;
+        background-color: transparent;
+    }
+
+    
+}
+
+@media  (max-width: 1024px) and (min-width:600px){
+    .mob{
+        grid-template-columns:23% 23% 23% 23%;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .home {
+        width: 100%;
     }
 }
