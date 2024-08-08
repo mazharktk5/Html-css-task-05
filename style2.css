@@ -470,3 +470,34 @@ hr{
     }
 } */
 
+
+
+/* for laptops */
+
+@media  (max-width: 765px) and (min-width: 400px){
+    .laptops{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content: space-evenly;
+    }
+    .lap-disc{
+        margin-bottom: 10px;
+    }
+}
+
+@media  (max-width: 400px) and (min-width: 300px){
+    .laptops{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content: space-evenly;
+    }
+    .lap-disc{
+        margin-bottom: 10px;
+    }
+
+    .lap-sec img{
+        width: 120px;
+        height: 120px;
+    }
+}
+
