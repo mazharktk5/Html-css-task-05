@@ -398,7 +398,7 @@ hr{
     
 }
 
-@media  (max-width: 1024px) and (min-width:600px){
+/* @media  (max-width: 1024px) and (min-width:600px){
     .mob{
         grid-template-columns:23% 23% 23% 23%;
         justify-content: space-around;
@@ -408,4 +408,4 @@ hr{
     .home {
         width: 100%;
     }
-}
+} */
