@@ -274,6 +274,7 @@ hr{
     justify-content: space-around;
     margin-top: 10px;
     z-index: 1;
+    margin-left: 10px;
 }
 
 .watches{
@@ -281,13 +282,14 @@ hr{
     justify-content: space-around;
     align-items: center;
     background-color: #91b5d3;
-    width: 210px;
-    height: 180px;
-    gap: 20px;
+    width: 200px;
+    height: 230px;
+    gap: 4px;
     margin-bottom: 20px;
     padding: 10px 50px;
     box-shadow: rgba(0,0,0,0.43) 0px 5px 10px;
     border-radius: 4px;
+    
     
 }
 
@@ -793,7 +795,7 @@ footer img{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 90%;
+        width: 90% ;
         padding: 10px;
     }
     .watches img {
@@ -805,5 +807,44 @@ footer img{
         text-align: center;
         font-size: 17px;
         margin-top: -29px; /* Added to create spacing between image and text */
+    }
+
+}
+
+
+@media  (max-width: 1000px) and (min-width: 768px){
+    .watches{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #91b5d3;
+        width: 200px;
+        height: 230px;
+        gap: 4px;
+        margin-bottom: 20px;
+        padding: 10px 50px;
+        box-shadow: rgba(0,0,0,0.43) 0px 5px 10px;
+        border-radius: 4px;
+        
+        
+    }
+}
+
+
+@media  (max-width: 5000px) and (min-width: 1000px){
+    .watches{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #91b5d3;
+        width: 500px;
+        height: 300px;
+        gap: 4px;
+        margin-bottom: 20px;
+        padding: 10px 50px;
+        box-shadow: rgba(0,0,0,0.43) 0px 5px 10px;
+        border-radius: 4px;
+        
+        
     }
 }
