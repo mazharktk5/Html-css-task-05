@@ -312,7 +312,7 @@ hr{
 }
 
 .watches img:hover {
-    transform: translateY(-10px); /* Lift image */
+    transform: translateY(-10px); 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -331,7 +331,7 @@ hr{
 }
 
 .watches img:hover {
-    transform: rotate(5deg); /* Slight rotation */
+    transform: rotate(5deg); 
 }
 
 
@@ -723,13 +723,13 @@ footer img{
         margin-bottom: 0px;
         padding: 20px;
         font-size: 2.5vh;
-        text-align: center; /* Center the heading */
+        text-align: center; 
     }
     .watch-sec {
         display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
-        gap: 20px; /* Added to create spacing between items */
+        gap: 20px; 
     }
     .watches {
         display: flex;
@@ -740,13 +740,13 @@ footer img{
     }
     .watches img {
         width: 100%;
-        height: auto; /* Maintain aspect ratio */
-        max-width: 150px; /* Set a maximum width */
+        height: auto; 
+        max-width: 150px; 
     }
     .watch-p {
         text-align: center;
         font-size: 17px;
-        margin-top: -22px; /* Added to create spacing between image and text */
+        margin-top: -22px; 
     }
 }
 
@@ -758,7 +758,7 @@ footer img{
         justify-content: center;
         gap: 10px;
         width: 90%; 
-        margin-left: 8px;/* Added to create spacing between items */
+        margin-left: 8px;
     }
     .watches {
         display: flex;
@@ -769,8 +769,8 @@ footer img{
     }
     .watches img {
         width: 100px;
-        height: auto; /* Maintain aspect ratio */
-        max-width: 80pxpx; /* Set a maximum width */
+        height: auto; 
+        max-width: 80pxpx; 
     }
 }
 
@@ -781,7 +781,7 @@ footer img{
         margin-bottom: 0px;
         padding: 20px;
         font-size: 2.5vh;
-        text-align: center; /* Center the heading */
+        text-align: center; 
     }
     .watch-sec {
         display: grid;
@@ -789,7 +789,7 @@ footer img{
         justify-content: center;
         gap: 20px;
         width: 90%;
-        margin-left: 10px; /* Added to create spacing between items */
+        margin-left: 10px; 
     }
     .watches {
         display: flex;
@@ -800,13 +800,13 @@ footer img{
     }
     .watches img {
         width: 90%;
-        height: auto; /* Maintain aspect ratio */
-        max-width: 150px; /* Set a maximum width */
+        height: auto; 
+        max-width: 150px; 
     }
     .watch-p {
         text-align: center;
         font-size: 17px;
-        margin-top: -29px; /* Added to create spacing between image and text */
+        margin-top: -29px; 
     }
 
 }
