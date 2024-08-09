@@ -17,6 +17,7 @@ nav{
     align-items: center;
     position: sticky;
     top: 0px;
+    z-index: 3;
 }
 
 #logo{
@@ -127,13 +128,11 @@ color: black;
     padding: 10px 20px;
 }
 
-
 hr{
-    
     margin-left: 25%;
     margin-right: 25%;
-    
 }
+
 .mob{
     display: grid;
     grid-template-columns: 14% 14% 14% 14% 14% 14%;
@@ -150,6 +149,13 @@ hr{
     border: 1px solid gainsboro;
     text-align: center;
     margin: 10px 0;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.mob-sec:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    background-color: #b3d8f2;
 }
 
 .mob-sec img{
@@ -158,11 +164,22 @@ hr{
     border-radius: 5px;
     margin: 10px;
     background-color: transparent;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.mob-sec img:hover{
+    transform: scale(1.05);
+    filter: brightness(1.1);
 }
 
 .desc{
     padding: 3px;
     font-size: small;
+    transition: color 0.3s;
+}
+
+.desc:hover{
+    color: #0056b3;
 }
 
 .p1{
@@ -171,63 +188,72 @@ hr{
 
 
 
-
 /* Laptops */
 
-#laptops-head{
+#laptops-head {
     margin-top: 10px;
     margin-bottom: 0px;
     padding: 10px 20px;
 }
 
-.laptops{
-  display: grid;
-  grid-template-columns: 22% 22% 22% 22%;
-  justify-content: space-around;
-  margin-bottom: 30px;
+.laptops {
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    justify-content: space-around;
+    margin-bottom: 30px;
 }
 
-.lap-sec{
-  align-items: center;
-  background-color: #c8e6f6;
-  border: 1px solid #c8e6f6;
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 20px;
-  border-radius: 4px;
+.lap-sec {
+    position: relative;
+    background-color: #c8e6f6;
+    border: 1px solid #c8e6f6;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.lap-sec img{
-  height: 140px;
-  width: 150px;
-  border-radius: 5px;
-  margin: 5px;
-  margin-bottom: 5px;
-  background-color: transparent;
-  margin-right: px;
+.lap-sec:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
 }
 
-.notify{
-  background-color: #00000078;
-  color: #fff;
-  width: 90px;
-  height: 40px;
-  padding: 0;
-  margin-top: 0px;
-  box-shadow: rgb(0,0,0,0.35) 0px 5px 10px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+.lap-sec img {
+    height: 140px;
+    width: 150px;
+    border-radius: 5px;
+    margin: 5px;
+    transition: transform 0.3s;
 }
 
-.notify p{
-  padding-top: 12px;
-  font-size: small;
+.lap-sec:hover img {
+    transform: scale(1.1);
 }
 
-.lap-disc{
-  padding-top: 5px;
-  padding-bottom: 15px;
+.notify {
+    background-color: #00000078;
+    color: #fff;
+    width: 90px;
+    height: 40px;
+    padding: 0;
+    margin-top: 0px;
+    box-shadow: rgb(0, 0, 0, 0.35) 0px 5px 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
+
+.notify p {
+    padding-top: 12px;
+    font-size: small;
+}
+
+.lap-disc {
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
 
 
 
@@ -247,6 +273,7 @@ hr{
     grid-template-columns: 40% 40%;
     justify-content: space-around;
     margin-top: 10px;
+    z-index: 1;
 }
 
 .watches{
@@ -261,11 +288,13 @@ hr{
     padding: 10px 50px;
     box-shadow: rgba(0,0,0,0.43) 0px 5px 10px;
     border-radius: 4px;
+    
 }
 
 .watches img{
     width: 150px;
     height: 150px;
+   
     
 }
 
@@ -775,6 +804,6 @@ footer img{
     .watch-p {
         text-align: center;
         font-size: 17px;
-        margin-top: -22px; /* Added to create spacing between image and text */
+        margin-top: -29px; /* Added to create spacing between image and text */
     }
 }
